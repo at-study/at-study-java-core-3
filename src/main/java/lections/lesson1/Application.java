@@ -30,6 +30,10 @@ public class Application {
 
         System.out.println(instance.longNumber1);
         System.out.println(instance.longNumber1);
+
+        char ch3 = 'A';
+        ch3++;
+        System.out.println(ch3);
     }
 
 }

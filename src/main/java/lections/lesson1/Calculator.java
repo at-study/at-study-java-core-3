@@ -25,6 +25,10 @@ public class Calculator {
         return result;
     }
 
+    int sum(int first, int second, int third) {
+        return first + second + third;
+    }
+
     /**
      * Вычисление разницы двух чисел
      *
