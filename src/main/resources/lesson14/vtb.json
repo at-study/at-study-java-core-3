@@ -1,0 +1,2060 @@
+{
+  "data": [
+    {
+      "id": 280,
+      "docName": {
+        "ru_RU": "Информационное сообщение"
+      },
+      "docNameForBank": {
+        "ru_RU": "Информационное сообщение"
+      },
+      "docType": "InfoMessage",
+      "description": {
+        "ru_RU": "Информационное сообщение"
+      },
+      "serviceName": "broadcast-announcement",
+      "isSignedByClient": false,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 452,
+      "docName": {
+        "ru_RU": "Отзыв заявки на сдачу наличных денег",
+        "en_US": "Recalling cash deposit application"
+      },
+      "docNameForBank": {
+        "ru_RU": "Отзыв заявки на сдачу наличных денег",
+        "en_US": "Recalling cash deposit application"
+      },
+      "docType": "CANCELREQ_CASH_DEPOSIT",
+      "description": {
+        "ru_RU": "Отзыв заявки на сдачу наличных денег",
+        "en_US": "Recalling cash deposit application"
+      },
+      "serviceName": "cash-deposit",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": true,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 4,
+      "docName": {
+        "ru_RU": "Массовая рассылка",
+        "en_US": "Bulk mailing"
+      },
+      "docNameForBank": {
+        "ru_RU": "Массовая рассылка",
+        "en_US": "Bulk mailing"
+      },
+      "docType": "4",
+      "description": {
+        "ru_RU": "Массовая рассылка"
+      },
+      "serviceName": "letters",
+      "isSignedByClient": false,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 195,
+      "docName": {
+        "ru_RU": "Заявление об изменении реквизитов для возврата депозита и уплаты начисленных процентов",
+        "en_US": "Application for change of details for deposit return and payment of accrued interests"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявление об изменении реквизитов для возврата депозита и уплаты начисленных процентов",
+        "en_US": "Application for change of details for deposit return and payment of accrued interests"
+      },
+      "docType": "UPDATE_DEPOSIT",
+      "description": {
+        "ru_RU": "Заявление об изменении реквизитов для возврата депозита и уплаты начисленных процентов",
+        "en_US": "Application for change of details for deposit return and payment of accrued interests"
+      },
+      "serviceName": "deposit",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "SUM",
+        "ACCOUNT"
+      ]
+    },
+    {
+      "id": 196,
+      "docName": {
+        "ru_RU": "Запрос на отзыв заявления об изменении реквизитов для возврата депозита и уплаты начисленных процентов",
+        "en_US": "Application for change of details for deposit return and payment of accrued interests recall request"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на отзыв заявления об изменении реквизитов для возврата депозита и уплаты начисленных процентов",
+        "en_US": "Application for change of details for deposit return and payment of accrued interests recall request"
+      },
+      "docType": "CANCELREQ_UPDATE_DEPOSIT",
+      "description": {
+        "ru_RU": "Запрос на отзыв заявления об изменении реквизитов для возврата депозита и уплаты начисленных процентов",
+        "en_US": "Application for change of details for deposit return and payment of accrued interests recall request"
+      },
+      "serviceName": "deposit",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": true,
+      "docTypeFeatures": [
+        "SUM",
+        "ACCOUNT"
+      ]
+    },
+    {
+      "id": 214,
+      "docName": {
+        "ru_RU": "Запрос на отзыв заявление о расторжении Сделки НСО",
+        "en_US": "Application for MB deal canceling recall request"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на отзыв заявление о расторжении Сделки НСО",
+        "en_US": "Application for MB deal canceling recall request"
+      },
+      "docType": "CANCELREQ_NSO_UPDATE",
+      "description": {
+        "ru_RU": "Запрос на отзыв заявление о расторжении Сделки НСО",
+        "en_US": "Application for MB deal canceling recall request"
+      },
+      "serviceName": "deposit-mb",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": true,
+      "docTypeFeatures": [
+        "SUM",
+        "ACCOUNT"
+      ]
+    },
+    {
+      "id": 218,
+      "docName": {
+        "ru_RU": "Запрос на отзыв заявления о присоединении к Условиям по НСО",
+        "en_US": "Application for MB Terms accession recall request"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на отзыв заявления о присоединении к Условиям по НСО",
+        "en_US": "Application for MB Terms accession recall request"
+      },
+      "docType": "CANCELREQ_NSO_JOINING",
+      "description": {
+        "ru_RU": "Запрос на отзыв заявления о присоединении к Условиям по НСО",
+        "en_US": "Application for MB Terms accession recall request"
+      },
+      "serviceName": "deposit-mb",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": true,
+      "docTypeFeatures": [
+        "SUM",
+        "ACCOUNT"
+      ]
+    },
+    {
+      "id": 1,
+      "docName": {
+        "ru_RU": "Письмо в Банк",
+        "en_US": "Letter to Bank"
+      },
+      "docNameForBank": {
+        "ru_RU": "Письмо от Клиента"
+      },
+      "docType": "1",
+      "description": {
+        "ru_RU": "Письмо в Банк"
+      },
+      "serviceName": "letters",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 61,
+      "docName": {
+        "ru_RU": "Заявление о постановке контракта (кредитного договора) на учет",
+        "en_US": "Application for contract (loan agreement) registration"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявление о постановке контракта (кредитного договора) на учет",
+        "en_US": "Заявление о постановке контракта (кредитного договора) на учет"
+      },
+      "docType": "61",
+      "description": {
+        "ru_RU": "Заявление о постановке контракта (кредитного договора) на учет",
+        "en_US": "Application for contract (loan agreement) registration"
+      },
+      "serviceName": "vktr",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 441,
+      "docName": {
+        "ru_RU": "Заявка на получение наличных денег",
+        "en_US": "Application for cash withdrawal"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявка на получение наличных денег",
+        "en_US": "Application for cash withdrawal"
+      },
+      "docType": "CASH_ORDER",
+      "description": {
+        "ru_RU": "Заявка на получение наличных денег",
+        "en_US": "Application for cash withdrawal"
+      },
+      "serviceName": "cash-order",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "ACCOUNT",
+        "SUM"
+      ]
+    },
+    {
+      "id": 330,
+      "docName": {
+        "ru_RU": "Распоряжение о правилах бюджетного контроля",
+        "en_US": "Budget control rules instruction"
+      },
+      "docNameForBank": {
+        "ru_RU": "Распоряжение о правилах бюджетного контроля",
+        "en_US": "Budget control rules instruction"
+      },
+      "docType": "CONTROL_DOC",
+      "description": {
+        "ru_RU": "Распоряжение о правилах бюджетного контроля"
+      },
+      "serviceName": "treasury-budget-execution-control",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 415,
+      "docName": {
+        "ru_RU": "Реестр уволенных сотрудников",
+        "en_US": "Register of dismissed employees"
+      },
+      "docNameForBank": {
+        "ru_RU": "Реестр уволенных сотрудников",
+        "en_US": "Register of dismissed employees"
+      },
+      "docType": "SLR_REGISTER_OF_FIRED_EMPLOYEES",
+      "description": {
+        "ru_RU": "Реестр уволенных сотрудников",
+        "en_US": "Register of dismissed employees"
+      },
+      "serviceName": "salary-register-of-fired-employees",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 416,
+      "docName": {
+        "ru_RU": "Запрос на отзыв реестра уволенных сотрудников",
+        "en_US": "Request for recall of register of dismissed employees"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на отзыв реестра уволенных сотрудников",
+        "en_US": "Request for recall of register of dismissed employees"
+      },
+      "docType": "SLR_REGISTER_OF_FIRED_EMPLOYEES",
+      "description": {
+        "ru_RU": "Запрос на отзыв реестра уволенных сотрудников",
+        "en_US": "Request for recall of register of dismissed employees"
+      },
+      "serviceName": "salary-register-of-fired-employees",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": true,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 462,
+      "docName": {
+        "ru_RU": "Отзыв заявки на бронирование наличных денег",
+        "en_US": "Cash reservation application recall"
+      },
+      "docNameForBank": {
+        "ru_RU": "Отзыв заявки на бронирование наличных денег",
+        "en_US": "Cash reservation application recall"
+      },
+      "docType": "CANCELREQ_CASH_BOOKING",
+      "description": {
+        "ru_RU": "Отзыв заявки на бронирование наличных денег",
+        "en_US": "Cash reservation application recall"
+      },
+      "serviceName": "cash-booking",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": true,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 451,
+      "docName": {
+        "ru_RU": "Заявка на сдачу наличных денег",
+        "en_US": "Cash deposit application"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявка на сдачу наличных денег",
+        "en_US": "Cash deposit application"
+      },
+      "docType": "CASH_DEPOSIT",
+      "description": {
+        "ru_RU": "Заявка на сдачу наличных денег",
+        "en_US": "Cash deposit application"
+      },
+      "serviceName": "cash-deposit",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 472,
+      "docName": {
+        "ru_RU": "Отзыв заявления о размене наличных денег",
+        "en_US": "Cash change application recall"
+      },
+      "docNameForBank": {
+        "ru_RU": "Отзыв заявления о размене наличных денег",
+        "en_US": "Cash change application recall"
+      },
+      "docType": "CANCELREQ_CASH_EXCHANGE",
+      "description": {
+        "ru_RU": "Отзыв заявления о размене наличных денег",
+        "en_US": "Cash change application recall"
+      },
+      "serviceName": "cash-exchange",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": true,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 481,
+      "docName": {
+        "ru_RU": "Заявление на выдачу денежной чековой книжки",
+        "en_US": "Checkbook issue application"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявление на выдачу денежной чековой книжки",
+        "en_US": "Checkbook issue application"
+      },
+      "docType": "CHECKBOOK",
+      "description": {
+        "ru_RU": "Заявление на выдачу денежной чековой книжки",
+        "en_US": "Checkbook issue application"
+      },
+      "serviceName": "checkbook",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "ACCOUNT_RUS"
+      ]
+    },
+    {
+      "id": 232,
+      "docName": {
+        "ru_RU": "Подтверждающий документ 214-ФЗ",
+        "en_GB": "214-FZ confirmation document",
+        "en_US": "214-FZ confirmation document"
+      },
+      "docNameForBank": {
+        "ru_RU": "Подтверждающий документ 214-ФЗ",
+        "en_GB": "214-FZ confirmation document",
+        "en_US": "214-FZ confirmation document"
+      },
+      "docType": "232",
+      "description": {
+        "ru_RU": "Подтверждающий документ 214-ФЗ",
+        "en_GB": "214-FZ confirmation document",
+        "en_US": "214-FZ confirmation document"
+      },
+      "serviceName": "bank-support-contract",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 622,
+      "docName": {
+        "ru_RU": "Заявление на ограничение по контрагенту",
+        "en_US": "Zayavleniya na ogranichenie po kontragentu"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявление на ограничение по контрагенту",
+        "en_US": "Zayavleniya na ogranichenie po kontragentu"
+      },
+      "docType": "ZOK",
+      "description": {
+        "ru_RU": "Заявление на ограничение по контрагенту",
+        "en_US": "Zayavleniya na ogranichenie po kontragentu"
+      },
+      "serviceName": "contractor-restriction-appl",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 193,
+      "docName": {
+        "ru_RU": "Заявление о досрочном востребовании депозита",
+        "en_US": "Application for early withdrawal of deposit"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявление о досрочном востребовании депозита",
+        "en_US": "Application for early withdrawal of deposit"
+      },
+      "docType": "EARLY_RECALL",
+      "description": {
+        "ru_RU": "Заявление о досрочном востребовании депозита",
+        "en_US": "Application for early withdrawal of deposit"
+      },
+      "serviceName": "deposit",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "SUM",
+        "ACCOUNT"
+      ]
+    },
+    {
+      "id": 194,
+      "docName": {
+        "ru_RU": "Запрос на отзыв заявления о досрочном востребовании депозита",
+        "en_US": "Application for early withdrawal of deposit recall request"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на отзыв заявления о досрочном востребовании депозита",
+        "en_US": "Application for early withdrawal of deposit recall request"
+      },
+      "docType": "CANCELREQ_EARLY_RECALL",
+      "description": {
+        "ru_RU": "Запрос на отзыв заявления о досрочном востребовании депозита",
+        "en_US": "Application for early withdrawal of deposit recall request"
+      },
+      "serviceName": "deposit",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": true,
+      "docTypeFeatures": [
+        "SUM",
+        "ACCOUNT"
+      ]
+    },
+    {
+      "id": 211,
+      "docName": {
+        "ru_RU": "Заявление о расторжении Сделки НСО",
+        "en_US": "Application for MB deal canceling"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявление о расторжении Сделки НСО",
+        "en_US": "Application for MB deal canceling"
+      },
+      "docType": "NSO_RECALL",
+      "description": {
+        "ru_RU": "Заявление о расторжении Сделки НСО",
+        "en_US": "Application for MB deal canceling"
+      },
+      "serviceName": "deposit-mb",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "SUM",
+        "ACCOUNT"
+      ]
+    },
+    {
+      "id": 212,
+      "docName": {
+        "ru_RU": "Запрос на отзыв заявление о расторжении Сделки НСО",
+        "en_US": "Application for MB deal canceling recall request"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на отзыв заявление о расторжении Сделки НСО",
+        "en_US": "Application for MB deal canceling recall request"
+      },
+      "docType": "CANCELREQ_NSO_RECALL",
+      "description": {
+        "ru_RU": "Запрос на отзыв заявление о расторжении Сделки НСО",
+        "en_US": "Application for MB deal canceling recall request"
+      },
+      "serviceName": "deposit-mb",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": true,
+      "docTypeFeatures": [
+        "SUM",
+        "ACCOUNT"
+      ]
+    },
+    {
+      "id": 213,
+      "docName": {
+        "ru_RU": "Заявление об изменении реквизитов НСО",
+        "en_US": "Application for MB details change"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявление об изменении реквизитов НСО",
+        "en_US": "Application for MB details change"
+      },
+      "docType": "NSO_UPDATE",
+      "description": {
+        "ru_RU": "Заявление об изменении реквизитов НСО",
+        "en_US": "Application for MB details change"
+      },
+      "serviceName": "deposit-mb",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "SUM",
+        "ACCOUNT"
+      ]
+    },
+    {
+      "id": 105,
+      "docName": {
+        "ru_RU": "Уведомление о согласии на продление срока депозита",
+        "en_US": "Notice of consent to deposit term renewal"
+      },
+      "docNameForBank": {
+        "ru_RU": "Уведомление о согласии на продление срока депозита",
+        "en_US": "Notice of consent to deposit term renewal"
+      },
+      "docType": "PROLONGATION_NOTIFICATION",
+      "description": {
+        "ru_RU": "Уведомление о согласии на продление срока депозита",
+        "en_US": "Notice of consent to deposit term renewal"
+      },
+      "serviceName": "deposit",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "AUTOSIGN_ONLY"
+      ]
+    },
+    {
+      "id": 191,
+      "docName": {
+        "ru_RU": "Заявление на частичное досрочное востребование депозита",
+        "en_US": "Application for partial early withdrawal of deposit"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявление на частичное досрочное востребование депозита",
+        "en_US": "Application for partial early withdrawal of deposit"
+      },
+      "docType": "PARTIAL_RECALL",
+      "description": {
+        "ru_RU": "Заявление на частичное досрочное востребование депозита",
+        "en_US": "Application for partial early withdrawal of deposit"
+      },
+      "serviceName": "deposit",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "SUM",
+        "ACCOUNT"
+      ]
+    },
+    {
+      "id": 71,
+      "docName": {
+        "ru_RU": "Запрос на выпуск сертификата",
+        "en_US": "Certificate issue request"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на выпуск сертификата",
+        "en_US": "Certificate issue request"
+      },
+      "docType": "71",
+      "description": {
+        "ru_RU": "Запрос на выпуск сертификата",
+        "en_US": "Certificate issue request"
+      },
+      "serviceName": "issue-certificate",
+      "isSignedByClient": false,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 192,
+      "docName": {
+        "ru_RU": "Запрос на отзыв заявления на частичное досрочное востребование депозита",
+        "en_US": "Application for partial early withdrawal of deposit recall request"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на отзыв заявления на частичное досрочное востребование депозита",
+        "en_US": "Application for partial early withdrawal of deposit recall request"
+      },
+      "docType": "CANCELREQ_PARTIAL_RECALL",
+      "description": {
+        "ru_RU": "Запрос на отзыв заявления на частичное досрочное востребование депозита",
+        "en_US": "Application for partial early withdrawal of deposit recall request"
+      },
+      "serviceName": "deposit",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": true,
+      "docTypeFeatures": [
+        "SUM",
+        "ACCOUNT"
+      ]
+    },
+    {
+      "id": 381,
+      "docName": {
+        "ru_RU": "Уведомление о запросе документов в банк"
+      },
+      "docNameForBank": {
+        "ru_RU": "Уведомление о запросе документов в банк"
+      },
+      "docType": "DOCUMENTS_TO_BANK_REQUEST_NOTIFICATION",
+      "description": {
+        "ru_RU": "Уведомление о запросе документов в банк"
+      },
+      "isSignedByClient": false,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "AUTOSIGN_ONLY"
+      ]
+    },
+    {
+      "id": 382,
+      "docName": {
+        "ru_RU": "Уведомление о получении документов в банк"
+      },
+      "docNameForBank": {
+        "ru_RU": "Уведомление о получении документов в банк"
+      },
+      "docType": "DOCUMENTS_TO_BANK_RECEIPT_NOTIFICATION",
+      "description": {
+        "ru_RU": "Уведомление о получении документов в банк"
+      },
+      "isSignedByClient": false,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "AUTOSIGN_ONLY"
+      ]
+    },
+    {
+      "id": 11,
+      "docName": {
+        "ru_RU": "Платежное поручение",
+        "en_US": "Payment order"
+      },
+      "docNameForBank": {
+        "ru_RU": "Платежное поручение",
+        "en_US": "Payment order"
+      },
+      "docType": "RU_PAYMENT",
+      "description": {
+        "ru_RU": "Рублевое платежное поручение",
+        "en_US": "Ruble payment order"
+      },
+      "serviceName": "rupayment-async",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "ACCOUNT",
+        "SUM"
+      ]
+    },
+    {
+      "id": 110,
+      "docName": {
+        "ru_RU": "Запрос на отзыв заявления о поддержании НСО",
+        "en_US": "MB maintenance application recall request"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на отзыв заявления о поддержании НСО",
+        "en_US": "MB maintenance application recall request"
+      },
+      "docType": "CANCELREQ_NSO",
+      "description": {
+        "ru_RU": "Запрос на отзыв заявления о поддержании НСО",
+        "en_US": "MB maintenance application recall request"
+      },
+      "serviceName": "deposit-mb",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": true,
+      "docTypeFeatures": [
+        "SUM",
+        "ACCOUNT"
+      ]
+    },
+    {
+      "id": 215,
+      "docName": {
+        "ru_RU": "Сделка по НСО",
+        "en_US": "MB deal"
+      },
+      "docNameForBank": {
+        "ru_RU": "Сделка по НСО",
+        "en_US": "MB deal"
+      },
+      "docType": "DEAL_NSO",
+      "description": {
+        "ru_RU": "Сделка по НСО",
+        "en_US": "MB deal"
+      },
+      "serviceName": "deposit-mb",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 72,
+      "docName": {
+        "ru_RU": "Запрос на перевыпуск сертификата",
+        "en_US": "Certificate reissue request"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на перевыпуск сертификата",
+        "en_US": "Certificate reissue request"
+      },
+      "docType": "72",
+      "description": {
+        "ru_RU": "Запрос на перевыпуск сертификата",
+        "en_US": "Certificate reissue request"
+      },
+      "serviceName": "issue-certificate",
+      "isSignedByClient": false,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 102,
+      "docName": {
+        "ru_RU": "Заявление на продление депозита",
+        "en_US": "Deposit renewal application"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявление на продление депозита",
+        "en_US": "Deposit renewal application"
+      },
+      "docType": "PROLONGATION",
+      "description": {
+        "ru_RU": "Заявление на продление депозита",
+        "en_US": "Deposit renewal application"
+      },
+      "serviceName": "deposit",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "SUM",
+        "ACCOUNT"
+      ]
+    },
+    {
+      "id": 108,
+      "docName": {
+        "ru_RU": "Запрос на отзыв заявления на размещение депозита",
+        "en_US": "Deposit placement application recall request"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на отзыв заявления на размещение депозита",
+        "en_US": "Deposit placement application recall request"
+      },
+      "docType": "CANCELREQ_DEPOSIT",
+      "description": {
+        "ru_RU": "Запрос на отзыв заявления на размещение депозита",
+        "en_US": "Deposit placement application recall request"
+      },
+      "serviceName": "deposit",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": true,
+      "docTypeFeatures": [
+        "SUM",
+        "ACCOUNT"
+      ]
+    },
+    {
+      "id": 197,
+      "docName": {
+        "ru_RU": "Сделка по депозиту",
+        "en_US": "Deposit deal"
+      },
+      "docNameForBank": {
+        "ru_RU": "Сделка по депозиту",
+        "en_US": "Deposit deal"
+      },
+      "docType": "DEAL_DEPOSIT",
+      "description": {
+        "ru_RU": "Сделка по депозиту",
+        "en_US": "Deposit deal"
+      },
+      "serviceName": "deposit",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 103,
+      "docName": {
+        "ru_RU": "Заявление о поддержании НСО",
+        "en_US": "Statement of MB maintenance"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявление о поддержании НСО",
+        "en_US": "Statement of MB maintenance"
+      },
+      "docType": "NSO",
+      "description": {
+        "ru_RU": "Заявление о поддержании НСО",
+        "en_US": "Statement of MB maintenance"
+      },
+      "serviceName": "deposit-mb",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "SUM",
+        "ACCOUNT"
+      ]
+    },
+    {
+      "id": 106,
+      "docName": {
+        "ru_RU": "Уведомление о согласии на установление НСО",
+        "en_US": "Notice of consent to setting of MB"
+      },
+      "docNameForBank": {
+        "ru_RU": "Уведомление о согласии на установление НСО",
+        "en_US": "Notice of consent to setting of MB"
+      },
+      "docType": "NSO_NOTIFICATION",
+      "description": {
+        "ru_RU": "Уведомление о согласии на установление НСО",
+        "en_US": "Notice of consent to setting of MB"
+      },
+      "serviceName": "deposit-mb",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "AUTOSIGN_ONLY"
+      ]
+    },
+    {
+      "id": 380,
+      "docName": {
+        "ru_RU": "Документ в Банк",
+        "en_US": "Document to Bank"
+      },
+      "docNameForBank": {
+        "ru_RU": "Документ в Банк",
+        "en_US": "Document to Bank"
+      },
+      "docType": "DOCUMENTS_TO_BANK",
+      "description": {
+        "ru_RU": "Документ в Банк",
+        "en_US": "Document to Bank"
+      },
+      "serviceName": "credit-corporate-doc-to-bank",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 101,
+      "docName": {
+        "ru_RU": "Заявление на размещение депозита",
+        "en_US": "Deposit placement application"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявление на размещение депозита",
+        "en_US": "Deposit placement application"
+      },
+      "docType": "DEPOSIT",
+      "description": {
+        "ru_RU": "Заявление на размещение депозита",
+        "en_US": "Deposit placement application"
+      },
+      "serviceName": "deposit",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "SUM",
+        "ACCOUNT"
+      ]
+    },
+    {
+      "id": 104,
+      "docName": {
+        "ru_RU": "Уведомление о согласии на размещение депозита",
+        "en_US": "Notice of consent to deposit placing"
+      },
+      "docNameForBank": {
+        "ru_RU": "Уведомление о согласии на размещение депозита",
+        "en_US": "Notice of consent to deposit placing"
+      },
+      "docType": "DEPOSIT_NOTIFICATION",
+      "description": {
+        "ru_RU": "Уведомление о согласии на размещение депозита",
+        "en_US": "Notice of consent to deposit placing"
+      },
+      "serviceName": "deposit",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "AUTOSIGN_ONLY"
+      ]
+    },
+    {
+      "id": 84,
+      "docName": {
+        "ru_RU": "Swift MT 103, MT 202"
+      },
+      "docNameForBank": {
+        "ru_RU": "Swift MT 103, MT 202"
+      },
+      "docType": "84",
+      "description": {
+        "ru_RU": "Swift MT 103, MT 202"
+      },
+      "serviceName": "statement",
+      "isSignedByClient": false,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 109,
+      "docName": {
+        "ru_RU": "Запрос на отзыв заявления на продление депозита",
+        "en_US": "Deposit renewal application recall request"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на отзыв заявления на продление депозита",
+        "en_US": "Deposit renewal application recall request"
+      },
+      "docType": "CANCELREQ_PROLONGATION",
+      "description": {
+        "ru_RU": "Запрос на отзыв заявления на продление депозита",
+        "en_US": "Deposit renewal application recall request"
+      },
+      "serviceName": "deposit",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": true,
+      "docTypeFeatures": [
+        "SUM",
+        "ACCOUNT"
+      ]
+    },
+    {
+      "id": 216,
+      "docName": {
+        "ru_RU": "Заявление о присоединении к Условиям по НСО",
+        "en_US": "Application for MB Terms accession"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявление о присоединении к Условиям по НСО",
+        "en_US": "Application for MB Terms accession"
+      },
+      "docType": "NSO_JOINING",
+      "description": {
+        "ru_RU": "Заявление о присоединении к Условиям по НСО",
+        "en_US": "Application for MB Terms accession"
+      },
+      "serviceName": "deposit-mb",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "AUTOSIGN_ONLY",
+        "SUM",
+        "ACCOUNT"
+      ]
+    },
+    {
+      "id": 217,
+      "docName": {
+        "ru_RU": "Заявление о присоединении к Условиям начисления и выплаты процентов на неснижаемые остатки денежных средств на счетах корпоративных клиентов в Банке ВТБ (ПАО) с отметками Банка"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявление о присоединении к Условиям начисления и выплаты процентов на неснижаемые остатки денежных средств на счетах корпоративных клиентов в Банке ВТБ (ПАО) с отметками Банка"
+      },
+      "docType": "NSO_JOINING_NOTIFICATION",
+      "description": {
+        "ru_RU": "Заявление о присоединении к Условиям начисления и выплаты процентов на неснижаемые остатки денежных средств на счетах корпоративных клиентов в Банке ВТБ (ПАО) с отметками Банка"
+      },
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "AUTOSIGN_ONLY"
+      ]
+    },
+    {
+      "id": 199,
+      "docName": {
+        "ru_RU": "Заявление о присоединении к Условиям проведения Банком ВТБ (ПАО) депозитных операций с корпоративными клиентами с отметками Банка"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявление о присоединении к Условиям проведения Банком ВТБ (ПАО) депозитных операций с корпоративными клиентами с отметками Банка"
+      },
+      "docType": "DEPOSIT_JOINING_NOTIFICATION",
+      "description": {
+        "ru_RU": "Заявление о присоединении к Условиям проведения Банком ВТБ (ПАО) депозитных операций с корпоративными клиентами с отметками Банка"
+      },
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "AUTOSIGN_ONLY"
+      ]
+    },
+    {
+      "id": 73,
+      "docName": {
+        "ru_RU": "Заявление на подключение услуги ДБО"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявление на подключение услуги ДБО"
+      },
+      "docType": "73",
+      "description": {
+        "ru_RU": "Заявление на подключение услуги ДБО"
+      },
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "ACCOUNT"
+      ]
+    },
+    {
+      "id": 75,
+      "docName": {
+        "ru_RU": "Уведомление об изменении параметров ДБО"
+      },
+      "docNameForBank": {
+        "ru_RU": "Уведомление об изменении параметров ДБО"
+      },
+      "docType": "75",
+      "description": {
+        "ru_RU": "Уведомление об изменении параметров ДБО"
+      },
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "ACCOUNT",
+        "AUTOSIGN_ONLY"
+      ]
+    },
+    {
+      "id": 231,
+      "docName": {
+        "ru_RU": "Подтверждающий документ ГОЗ",
+        "en_GB": "SDO confirmation document",
+        "en_US": "SDO confirmation document"
+      },
+      "docNameForBank": {
+        "ru_RU": "Подтверждающий документ ГОЗ",
+        "en_GB": "SDO confirmation document",
+        "en_US": "SDO confirmation document"
+      },
+      "docType": "231",
+      "description": {
+        "ru_RU": "Подтверждающий документ ГОЗ",
+        "en_GB": "SDO confirmation document",
+        "en_US": "SDO confirmation document"
+      },
+      "serviceName": "bank-support-contract",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 200,
+      "docName": {
+        "ru_RU": "Запрос на отзыв заявления о присоединении к условиям депозитных операций",
+        "en_US": "Application for Deposits Terms accession recall request"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на отзыв заявления о присоединении к условиям депозитных операций",
+        "en_US": "Application for Deposits Terms accession recall request"
+      },
+      "docType": "CANCELREQ_DEPOSIT_JOINING",
+      "description": {
+        "ru_RU": "Запрос на отзыв заявления о присоединении к условиям депозитных операций",
+        "en_US": "Application for Deposits Terms accession recall request"
+      },
+      "serviceName": "deposit",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": true,
+      "docTypeFeatures": [
+        "SUM",
+        "ACCOUNT"
+      ]
+    },
+    {
+      "id": 198,
+      "docName": {
+        "ru_RU": "Заявление о присоединении к условиям депозитных операций",
+        "en_US": "Application for Deposits Terms accession"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявление о присоединении к условиям депозитных операций",
+        "en_US": "Application for Deposits Terms accession"
+      },
+      "docType": "DEPOSIT_JOINING",
+      "description": {
+        "ru_RU": "Заявление о присоединении к условиям депозитных операций",
+        "en_US": "Application for Deposits Terms accession"
+      },
+      "serviceName": "deposit",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "AUTOSIGN_ONLY",
+        "SUM",
+        "ACCOUNT"
+      ]
+    },
+    {
+      "id": 413,
+      "docName": {
+        "ru_RU": "Реестр на зачисление заработной платы",
+        "en_US": "Payroll register"
+      },
+      "docNameForBank": {
+        "ru_RU": "Реестр на зачисление заработной платы",
+        "en_US": "Payroll register"
+      },
+      "docType": "SLR_REGISTER_FOR_SALARY",
+      "description": {
+        "ru_RU": "Реестр на зачисление заработной платы",
+        "en_US": "Payroll register"
+      },
+      "serviceName": "salary-register-for-salary",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "ACCOUNT"
+      ]
+    },
+    {
+      "id": 411,
+      "docName": {
+        "ru_RU": "Реестр на выпуск карт",
+        "en_US": "Card issue register"
+      },
+      "docNameForBank": {
+        "ru_RU": "Реестр на выпуск карт",
+        "en_US": "Card issue register"
+      },
+      "docType": "SLR_REGISTER_OF_CARDS",
+      "description": {
+        "ru_RU": "Реестр на выпуск карт",
+        "en_US": "Card issue register"
+      },
+      "serviceName": "salary-register-of-cards",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 412,
+      "docName": {
+        "ru_RU": "Запрос на отзыв реестра на выпуск карт",
+        "en_US": "Request for recall of card issue register"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на отзыв реестра на выпуск карт",
+        "en_US": "Request for recall of card issue register"
+      },
+      "docType": "SLR_REGISTER_OF_CARDS",
+      "description": {
+        "ru_RU": "Запрос на отзыв реестра на выпуск карт",
+        "en_US": "Request for recall of card issue register"
+      },
+      "serviceName": "salary-register-of-cards",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": true,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 3,
+      "docName": {
+        "ru_RU": "Запрос на отзыв письма в Банк",
+        "en_US": "Letter to Bank cancel request"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на отзыв письма в Банк",
+        "en_US": "Letter to Bank cancel request"
+      },
+      "docType": "3",
+      "description": {
+        "ru_RU": "Запрос на отзыв письма в Банк"
+      },
+      "serviceName": "letters",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": true,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 233,
+      "docName": {
+        "ru_RU": "Уведомление 214-ФЗ",
+        "en_GB": "214-FZ notice",
+        "en_US": "214-FZ notice"
+      },
+      "docNameForBank": {
+        "ru_RU": "Уведомление 214-ФЗ",
+        "en_GB": "214-FZ notice",
+        "en_US": "214-FZ notice"
+      },
+      "docType": "233",
+      "description": {
+        "ru_RU": "Уведомление 214-ФЗ",
+        "en_GB": "214-FZ notice",
+        "en_US": "214-FZ notice"
+      },
+      "serviceName": "bank-support-contract",
+      "isSignedByClient": false,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "AUTOSIGN_ONLY"
+      ]
+    },
+    {
+      "id": 234,
+      "docName": {
+        "ru_RU": "Уведомление ГОЗ",
+        "en_GB": "SDO notice",
+        "en_US": "SDO notice"
+      },
+      "docNameForBank": {
+        "ru_RU": "Уведомление ГОЗ",
+        "en_GB": "SDO notice",
+        "en_US": "SDO notice"
+      },
+      "docType": "234",
+      "description": {
+        "ru_RU": "Уведомление ГОЗ",
+        "en_GB": "SDO notice",
+        "en_US": "SDO notice"
+      },
+      "serviceName": "bank-support-contract",
+      "isSignedByClient": false,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "AUTOSIGN_ONLY"
+      ]
+    },
+    {
+      "id": 240,
+      "docName": {
+        "ru_RU": "Ответ на уведомление 214-ФЗ",
+        "en_GB": "Reply to 214-FZ notice",
+        "en_US": "Reply to 214-FZ notice"
+      },
+      "docNameForBank": {
+        "ru_RU": "Ответ на уведомление 214-ФЗ",
+        "en_GB": "Reply to 214-FZ notice",
+        "en_US": "Reply to 214-FZ notice"
+      },
+      "docType": "240",
+      "description": {
+        "ru_RU": "Ответ на уведомление 214-ФЗ",
+        "en_GB": "Reply to 214-FZ notice",
+        "en_US": "Reply to 214-FZ notice"
+      },
+      "serviceName": "bank-support-contract",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 241,
+      "docName": {
+        "ru_RU": "Ответ на уведомление ГОЗ",
+        "en_GB": "Reply to SDO notice",
+        "en_US": "Reply to SDO notice"
+      },
+      "docNameForBank": {
+        "ru_RU": "Ответ на уведомление ГОЗ",
+        "en_GB": "Reply to SDO notice",
+        "en_US": "Reply to SDO notice"
+      },
+      "docType": "241",
+      "description": {
+        "ru_RU": "Ответ на уведомление ГОЗ",
+        "en_GB": "Reply to SDO notice",
+        "en_US": "Reply to SDO notice"
+      },
+      "serviceName": "bank-support-contract",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 81,
+      "docName": {
+        "ru_RU": "Выписка"
+      },
+      "docNameForBank": {
+        "ru_RU": "Выписка"
+      },
+      "docType": "81",
+      "description": {
+        "ru_RU": "Выписка"
+      },
+      "serviceName": "statement",
+      "isSignedByClient": false,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 43,
+      "docName": {
+        "ru_RU": "Списание с транзитного счёта"
+      },
+      "docNameForBank": {
+        "ru_RU": "Списание с транзитного счёта"
+      },
+      "docType": "43",
+      "description": {
+        "ru_RU": "Списание с транзитного счёта"
+      },
+      "serviceName": "vrko-transit-account-withdrawal",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "ACCOUNT",
+        "SUM"
+      ]
+    },
+    {
+      "id": 31,
+      "docName": {
+        "ru_RU": "Заявление на резервирование счета",
+        "en_GB": "Account reservation request",
+        "en_US": "Account reservation request"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявление на резервирование счета",
+        "en_GB": "Account reservation request",
+        "en_US": "Account reservation request"
+      },
+      "docType": "31",
+      "description": {
+        "ru_RU": "Заявление на резервирование счета"
+      },
+      "serviceName": "open-account",
+      "isSignedByClient": false,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 32,
+      "docName": {
+        "ru_RU": "Заявление на открытие счета",
+        "en_GB": "Open account request",
+        "en_US": "Open account request"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявление на открытие счета",
+        "en_GB": "Open account request",
+        "en_US": "Open account request"
+      },
+      "docType": "32",
+      "description": {
+        "ru_RU": "Заявление на открытие счета"
+      },
+      "serviceName": "open-account",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 471,
+      "docName": {
+        "ru_RU": "Заявление о размене наличных денег",
+        "en_US": "Cash change application"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявление о размене наличных денег",
+        "en_US": "Cash change application"
+      },
+      "docType": "CASH_EXCHANGE",
+      "description": {
+        "ru_RU": "Заявление о размене наличных денег",
+        "en_US": "Cash change application"
+      },
+      "serviceName": "cash-exchange",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 47,
+      "docName": {
+        "ru_RU": "Заявление на операцию с наличной иностранной валютой"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявление на операцию с наличной иностранной валютой"
+      },
+      "docType": "47",
+      "description": {
+        "ru_RU": "Заявление на операцию с наличной иностранной валютой"
+      },
+      "serviceName": "vrko-application-cash-operation",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "ACCOUNT",
+        "SUM"
+      ]
+    },
+    {
+      "id": 48,
+      "docName": {
+        "ru_RU": "Запрос на отзыв заявления на операцию с наличной иностранной валютой"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на отзыв заявления на операцию с наличной иностранной валютой"
+      },
+      "docType": "48",
+      "description": {
+        "ru_RU": "Запрос на отзыв заявления на операцию с наличной иностранной валютой"
+      },
+      "serviceName": "vrko-application-cash-operation",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": true,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 461,
+      "docName": {
+        "ru_RU": "Заявка на бронирование наличных денег",
+        "en_US": "Cash reservation application"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявка на бронирование наличных денег",
+        "en_US": "Cash reservation application"
+      },
+      "docType": "CASH_BOOKING",
+      "description": {
+        "ru_RU": "Заявка на бронирование наличных денег",
+        "en_US": "Cash reservation application"
+      },
+      "serviceName": "cash-booking",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 482,
+      "docName": {
+        "ru_RU": "Отзыв заявления на выдачу денежной чековой книжки",
+        "en_US": "Checkbook issue application recall"
+      },
+      "docNameForBank": {
+        "ru_RU": "Отзыв заявления на выдачу денежной чековой книжки",
+        "en_US": "Checkbook issue application recall"
+      },
+      "docType": "CANCELREQ_CHECKBOOK",
+      "description": {
+        "ru_RU": "Отзыв заявления на выдачу денежной чековой книжки",
+        "en_US": "Checkbook issue application recall"
+      },
+      "serviceName": "checkbook",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": true,
+      "docTypeFeatures": [
+        "ACCOUNT_RUS"
+      ]
+    },
+    {
+      "id": 2,
+      "docName": {
+        "ru_RU": "Письмо из Банка",
+        "en_US": "Letter from Bank"
+      },
+      "docNameForBank": {
+        "ru_RU": "Письмо из Банка"
+      },
+      "docType": "2",
+      "description": {
+        "ru_RU": "Письмо из Банка"
+      },
+      "serviceName": "letters",
+      "isSignedByClient": false,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "AUTOSIGN_ONLY"
+      ]
+    },
+    {
+      "id": 12,
+      "docName": {
+        "ru_RU": "Запрос на отзыв рублевого платежного поручения",
+        "en_US": "Withdraw request for ruble payment order"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на отзыв рублевого платежного поручения",
+        "en_US": "Withdraw request for ruble payment order"
+      },
+      "docType": "12",
+      "description": {
+        "ru_RU": "Запрос на отзыв рублевого платежного поручения",
+        "en_US": "Withdraw request for ruble payment order"
+      },
+      "serviceName": "rupayment-async",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": true,
+      "docTypeFeatures": [
+        "ACCOUNT",
+        "SUM"
+      ]
+    },
+    {
+      "id": 442,
+      "docName": {
+        "ru_RU": "Отзыв заявки на получение наличных денег",
+        "en_US": "Application for cash withdrawal recall"
+      },
+      "docNameForBank": {
+        "ru_RU": "Отзыв заявки на получение наличных денег",
+        "en_US": "Application for cash withdrawal recall"
+      },
+      "docType": "CANCELREQ_CASH_ORDER",
+      "description": {
+        "ru_RU": "Отзыв заявки на получение наличных денег",
+        "en_US": "Application for cash withdrawal recall"
+      },
+      "serviceName": "cash-order",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": true,
+      "docTypeFeatures": [
+        "ACCOUNT",
+        "SUM"
+      ]
+    },
+    {
+      "id": 41,
+      "docName": {
+        "ru_RU": "Поручение на конверсионную операцию"
+      },
+      "docNameForBank": {
+        "ru_RU": "Поручение на конверсионную операцию"
+      },
+      "docType": "41",
+      "description": {
+        "ru_RU": "Поручение на конверсионную операцию"
+      },
+      "serviceName": "settlement-and-cash-serv",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "ACCOUNT",
+        "SUM"
+      ]
+    },
+    {
+      "id": 42,
+      "docName": {
+        "ru_RU": "Заявление на перевод"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявление на перевод"
+      },
+      "docType": "42",
+      "description": {
+        "ru_RU": "Заявление на перевод"
+      },
+      "serviceName": "vrko-ctr",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "ACCOUNT",
+        "SUM"
+      ]
+    },
+    {
+      "id": 46,
+      "docName": {
+        "ru_RU": "Запрос на отзыв списания с транзитного счёта"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на отзыв списания с транзитного счёта"
+      },
+      "docType": "46",
+      "description": {
+        "ru_RU": "Запрос на отзыв списания с транзитного счёта"
+      },
+      "serviceName": "vrko-transit-account-withdrawal",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": true,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 63,
+      "docName": {
+        "ru_RU": "Справка о подтверждающих документах",
+        "en_US": "Certificate of confirming documents"
+      },
+      "docNameForBank": {
+        "ru_RU": "Справка о подтверждающих документах",
+        "en_US": "Certificate of confirming documents"
+      },
+      "docType": "63",
+      "description": {
+        "ru_RU": "Справка о подтверждающих документах",
+        "en_US": "Certificate of confirming documents"
+      },
+      "serviceName": "ec-confirmation-documents-reference",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 62,
+      "version": 0,
+      "docName": {
+        "ru_RU": "Заявление об изменении контракта",
+        "en_US": "Contract amendment appication"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявление об изменении контракта",
+        "en_US": "Contract amendment appication"
+      },
+      "docType": "62",
+      "description": {
+        "ru_RU": "Заявление об изменении контракта",
+        "en_US": "Contract amendment appication"
+      },
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 64,
+      "version": 0,
+      "docName": {
+        "ru_RU": "Заявление о снятии контракта с учета",
+        "en_US": "Contract deregistration application"
+      },
+      "docNameForBank": {
+        "ru_RU": "Заявление о снятии контракта с учета",
+        "en_US": "Contract deregistration application"
+      },
+      "docType": "64",
+      "description": {
+        "ru_RU": "Заявление о снятии контракта с учета",
+        "en_US": "Contract deregistration application"
+      },
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 65,
+      "version": 0,
+      "docName": {
+        "ru_RU": "Сведения о валютной операции",
+        "en_US": "Forex transaction details"
+      },
+      "docNameForBank": {
+        "ru_RU": "Сведения о валютной операции",
+        "en_US": "Forex transaction details"
+      },
+      "docType": "65",
+      "description": {
+        "ru_RU": "Сведения о валютной операции",
+        "en_US": "Forex transaction details"
+      },
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 67,
+      "version": 0,
+      "docName": {
+        "ru_RU": "Запрос на отзыв заявления об изменении контракта",
+        "en_US": "Request for recall of contract amendment application"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на отзыв заявления об изменении контракта",
+        "en_US": "Request for recall of contract amendment application"
+      },
+      "docType": "67",
+      "description": {
+        "ru_RU": "Запрос на отзыв заявления об изменении контракта",
+        "en_US": "Request for recall of contract amendment application"
+      },
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": true,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 69,
+      "version": 0,
+      "docName": {
+        "ru_RU": "Запрос на отзыв заявления о снятии контракта с учета",
+        "en_US": "Request for recall of contract deregistration application"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на отзыв заявления о снятии контракта с учета",
+        "en_US": "Request for recall of contract deregistration application"
+      },
+      "docType": "69",
+      "description": {
+        "ru_RU": "Запрос на отзыв заявления о снятии контракта с учета",
+        "en_US": "Request for recall of contract deregistration application"
+      },
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": true,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 70,
+      "version": 0,
+      "docName": {
+        "ru_RU": "Запрос на отзыв заявления сведений о валютной операции",
+        "en_US": "Request for recall of Forex transaction details application"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на отзыв заявления сведений о валютной операции",
+        "en_US": "Request for recall of Forex transaction details application"
+      },
+      "docType": "70",
+      "description": {
+        "ru_RU": "Запрос на отзыв заявления сведений о валютной операции",
+        "en_US": "Request for recall of Forex transaction details application"
+      },
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": true,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 82,
+      "docName": {
+        "ru_RU": "Извещение о поступлении валюты РФ от нерезидента",
+        "en_US": "Notice on RF currency receipt from non-resident"
+      },
+      "docNameForBank": {
+        "ru_RU": "Извещение о поступлении валюты РФ от нерезидента",
+        "en_US": "Notice on RF currency receipt from non-resident"
+      },
+      "docType": "82",
+      "description": {
+        "ru_RU": "Извещение о поступлении валюты РФ от нерезидента",
+        "en_US": "Notice on RF currency receipt from non-resident"
+      },
+      "isSignedByClient": false,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 66,
+      "docName": {
+        "ru_RU": "Request for recall of application for contract registration",
+        "en_US": "Запрос на отзыв заявления о постановке контракта на учет"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на отзыв заявления о постановке контракта на учет",
+        "en_US": "Запрос на отзыв заявления о постановке контракта на учет"
+      },
+      "docType": "66",
+      "description": {
+        "ru_RU": "Request for recall of application for contract registration",
+        "en_US": "Запрос на отзыв заявления о постановке контракта на учет"
+      },
+      "serviceName": "vktr",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 44,
+      "docName": {
+        "ru_RU": "Запрос на отзыв заявления на конверсионную операцию"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на отзыв заявления на конверсионную операцию"
+      },
+      "docType": "44",
+      "description": {
+        "ru_RU": "Запрос на отзыв заявления на конверсионную операцию"
+      },
+      "serviceName": "settlement-and-cash-serv",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": true,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 45,
+      "docName": {
+        "ru_RU": "Запрос на отзыв заявления на перевод"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на отзыв заявления на перевод"
+      },
+      "docType": "45",
+      "description": {
+        "ru_RU": "Запрос на отзыв заявления на перевод"
+      },
+      "serviceName": "vrko-ctr",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": true,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 83,
+      "docName": {
+        "ru_RU": "Уведомление о поступлении средств на транзитный валютный счет",
+        "en_US": "Notice on crediting funds to transit currency account"
+      },
+      "docNameForBank": {
+        "ru_RU": "Уведомление о поступлении средств на транзитный валютный счет",
+        "en_US": "Notice on crediting funds to transit currency account"
+      },
+      "docType": "83",
+      "description": {
+        "ru_RU": "Уведомление о поступлении средств на транзитный валютный счет",
+        "en_US": "Notice on crediting funds to transit currency account"
+      },
+      "isSignedByClient": false,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    },
+    {
+      "id": 107,
+      "docName": {
+        "ru_RU": "Уведомление о прекращении сделки НСО",
+        "en_US": "Notice of termination of MB deal"
+      },
+      "docNameForBank": {
+        "ru_RU": "Уведомление о прекращении сделки НСО",
+        "en_US": "Notice of termination of MB deal"
+      },
+      "docType": "NSO_CANCEL_NOTIFICATION",
+      "description": {
+        "ru_RU": "Уведомление о прекращении сделки НСО",
+        "en_US": "Notice of termination of MB deal"
+      },
+      "serviceName": "deposit-mb",
+      "isSignedByClient": true,
+      "isSignedByBank": true,
+      "isBusinessControlsAvailable": false,
+      "isCancelRequest": false,
+      "docTypeFeatures": [
+        "AUTOSIGN_ONLY"
+      ]
+    },
+    {
+      "id": 414,
+      "docName": {
+        "ru_RU": "Запрос на отзыв реестра на зачисление заработной платы",
+        "en_US": "Request for recall of payroll register"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на отзыв реестра на зачисление заработной платы",
+        "en_US": "Request for recall of payroll register"
+      },
+      "docType": "SLR_REGISTER_FOR_SALARY",
+      "description": {
+        "ru_RU": "Запрос на отзыв реестра на зачисление заработной платы",
+        "en_US": "Request for recall of payroll register"
+      },
+      "serviceName": "salary-register-for-salary",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": true,
+      "docTypeFeatures": [
+        "ACCOUNT"
+      ]
+    },
+    {
+      "id": 68,
+      "docName": {
+        "ru_RU": "Запрос на отзыв справки о подтверждающих документах",
+        "en_US": "Request for recall of confirming documents certificate"
+      },
+      "docNameForBank": {
+        "ru_RU": "Запрос на отзыв справки о подтверждающих документах",
+        "en_US": "Request for recall of confirming documents certificate"
+      },
+      "docType": "68",
+      "description": {
+        "ru_RU": "Запрос на отзыв справки о подтверждающих документах",
+        "en_US": "Request for recall of confirming documents certificate"
+      },
+      "serviceName": "ec-confirmation-documents-reference",
+      "isSignedByClient": true,
+      "isSignedByBank": false,
+      "isBusinessControlsAvailable": true,
+      "isCancelRequest": false,
+      "docTypeFeatures": []
+    }
+  ],
+  "total": 90
+}

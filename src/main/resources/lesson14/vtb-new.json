@@ -1,0 +1,505 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "version": 0,
+      "sysname": "Axioma_ON",
+      "name": "Депозит «овернайт»",
+      "description": "Выплата процентов в конце срока",
+      "externalSystemId": 14,
+      "addInfo": [],
+      "termConditions": [
+        {
+          "id": 1,
+          "version": 0,
+          "term": 1,
+          "kind": "MIN"
+        },
+        {
+          "id": 2,
+          "version": 0,
+          "term": 1,
+          "kind": "MAX"
+        }
+      ],
+      "amountConditions": [
+        {
+          "id": 1,
+          "version": 0,
+          "minAmount": 1000000.000000000000,
+          "currency": {
+            "id": 124,
+            "name": "russian ruble",
+            "okvName": "российский рубль",
+            "numericCode": "643",
+            "alphabeticCode": "RUB",
+            "accuracy": 100,
+            "isActive": true,
+            "isBankUsing": true,
+            "isNationalCur": true,
+            "sortOrder": 10,
+            "isOpenAccount": false
+          }
+        },
+        {
+          "id": 2,
+          "version": 0,
+          "minAmount": 15000.000000000000,
+          "currency": {
+            "id": 160,
+            "name": "US dollar",
+            "okvName": "доллар США",
+            "numericCode": "840",
+            "alphabeticCode": "USD",
+            "accuracy": 100,
+            "isActive": true,
+            "isBankUsing": true,
+            "isNationalCur": false,
+            "sortOrder": 20,
+            "isOpenAccount": false
+          }
+        },
+        {
+          "id": 3,
+          "version": 0,
+          "minAmount": 15000.000000000000,
+          "currency": {
+            "id": 197,
+            "name": "euro",
+            "okvName": "евро",
+            "numericCode": "978",
+            "alphabeticCode": "EUR",
+            "accuracy": 100,
+            "isActive": true,
+            "isBankUsing": false,
+            "isNationalCur": false,
+            "sortOrder": 30,
+            "isOpenAccount": false
+          }
+        }
+      ],
+      "extCode": "ON",
+      "isActive": true,
+      "prolongationAvailability": false,
+      "callRateAvailability": false,
+      "checkAccountSuspension": false,
+      "percentRates": "Устанавливаются в зависимости от суммы, валюты депозита и ставок межбанковского рынка",
+      "paymentOfPercentsMethod": {
+        "id": 1,
+        "version": 0,
+        "name": "В конце срока"
+      },
+      "isCapitalisation": false,
+      "isReplenishment": false,
+      "isPartialWithdrawal": false,
+      "isEarlyReturn": false
+    },
+    {
+      "id": 3,
+      "version": 0,
+      "sysname": "Axioma_TOPUP",
+      "name": "Депозит с возможностью пополнения и частичного снятия суммы депозита",
+      "description": "Выплата процентов в конце срока\n\nВозможно пополнение и частичное снятие",
+      "externalSystemId": 14,
+      "addInfo": [],
+      "termConditions": [
+        {
+          "id": 5,
+          "version": 0,
+          "term": 61,
+          "kind": "MIN"
+        },
+        {
+          "id": 6,
+          "version": 0,
+          "term": 365,
+          "kind": "MAX"
+        }
+      ],
+      "amountConditions": [
+        {
+          "id": 7,
+          "version": 0,
+          "minAmount": 2000000.000000000000,
+          "currency": {
+            "id": 124,
+            "name": "russian ruble",
+            "okvName": "российский рубль",
+            "numericCode": "643",
+            "alphabeticCode": "RUB",
+            "accuracy": 100,
+            "isActive": true,
+            "isBankUsing": true,
+            "isNationalCur": true,
+            "sortOrder": 10,
+            "isOpenAccount": false
+          }
+        },
+        {
+          "id": 8,
+          "version": 0,
+          "minAmount": 200000.000000000000,
+          "currency": {
+            "id": 160,
+            "name": "US dollar",
+            "okvName": "доллар США",
+            "numericCode": "840",
+            "alphabeticCode": "USD",
+            "accuracy": 100,
+            "isActive": true,
+            "isBankUsing": true,
+            "isNationalCur": false,
+            "sortOrder": 20,
+            "isOpenAccount": false
+          }
+        },
+        {
+          "id": 9,
+          "version": 0,
+          "minAmount": 200000.000000000000,
+          "currency": {
+            "id": 197,
+            "name": "euro",
+            "okvName": "евро",
+            "numericCode": "978",
+            "alphabeticCode": "EUR",
+            "accuracy": 100,
+            "isActive": true,
+            "isBankUsing": false,
+            "isNationalCur": false,
+            "sortOrder": 30,
+            "isOpenAccount": false
+          }
+        }
+      ],
+      "extCode": "TOPUP",
+      "isActive": true,
+      "prolongationAvailability": true,
+      "callRateAvailability": false,
+      "checkAccountSuspension": true,
+      "percentRates": "Устанавливаются в зависимости от суммы, валюты и срока размещения депозита",
+      "paymentOfPercentsMethod": {
+        "id": 1,
+        "version": 0,
+        "name": "В конце срока"
+      },
+      "isCapitalisation": false,
+      "isReplenishment": true,
+      "replenishmentComment": "Возможно, общая сумма всех дополнительных взносов с учетом частичного возврата суммы депозита в течение срока депозита не может превышать первоначальную сумму взноса в депозит более чем в 2 раза (для депозита на срок до 180 дней взносы принимаются, если до истечения его срока осталось не менее 30 дней, а для депозита на срок от 181 дня – если до истечения его срока осталось не менее 90 дней)",
+      "isPartialWithdrawal": true,
+      "partialWithdrawalComment": "Возможно при условии поддержания неснижаемого остатка (первоначальная сумма взноса в депозит является неснижаемым остатком и не может быть востребована досрочно), при этом частичный возврат до 150 млн рублей РФ/5 млн долларов США/5 млн евро осуществляется на основании заявления, поступившего не позднее рабочего дня, следующего за днем его предоставления, а частичный возврат свыше 150 млн рублей РФ/5 млн долларов США/5 млн евро осуществляется на основании заявления, поступившего не менее чем за 3 рабочих дня до предполагаемой даты возврата части суммы депозита",
+      "isEarlyReturn": false
+    },
+    {
+      "id": 5,
+      "version": 0,
+      "sysname": "Axioma_PRGNEW",
+      "name": "Депозит с возможностью досрочного расторжения",
+      "description": "Выплата процентов в конце срока\n\nВозможен досрочный возврат",
+      "externalSystemId": 14,
+      "addInfo": [],
+      "termConditions": [
+        {
+          "id": 67,
+          "version": 0,
+          "term": 60,
+          "kind": "DISCRETE"
+        },
+        {
+          "id": 68,
+          "version": 0,
+          "term": 90,
+          "kind": "DISCRETE"
+        },
+        {
+          "id": 69,
+          "version": 0,
+          "term": 120,
+          "kind": "DISCRETE"
+        },
+        {
+          "id": 70,
+          "version": 0,
+          "term": 180,
+          "kind": "DISCRETE"
+        },
+        {
+          "id": 71,
+          "version": 0,
+          "term": 270,
+          "kind": "DISCRETE"
+        },
+        {
+          "id": 72,
+          "version": 0,
+          "term": 360,
+          "kind": "DISCRETE"
+        }
+      ],
+      "amountConditions": [
+        {
+          "id": 10,
+          "version": 0,
+          "maxAmount": 450000000.000000000000,
+          "currency": {
+            "id": 124,
+            "name": "russian ruble",
+            "okvName": "российский рубль",
+            "numericCode": "643",
+            "alphabeticCode": "RUB",
+            "accuracy": 100,
+            "isActive": true,
+            "isBankUsing": true,
+            "isNationalCur": true,
+            "sortOrder": 10,
+            "isOpenAccount": false
+          }
+        },
+        {
+          "id": 11,
+          "version": 0,
+          "minAmount": 500000.000000000000,
+          "maxAmount": 15000000.000000000000,
+          "currency": {
+            "id": 160,
+            "name": "US dollar",
+            "okvName": "доллар США",
+            "numericCode": "840",
+            "alphabeticCode": "USD",
+            "accuracy": 100,
+            "isActive": true,
+            "isBankUsing": true,
+            "isNationalCur": false,
+            "sortOrder": 20,
+            "isOpenAccount": false
+          }
+        },
+        {
+          "id": 12,
+          "version": 0,
+          "minAmount": 500000.000000000000,
+          "maxAmount": 10000000.000000000000,
+          "currency": {
+            "id": 197,
+            "name": "euro",
+            "okvName": "евро",
+            "numericCode": "978",
+            "alphabeticCode": "EUR",
+            "accuracy": 100,
+            "isActive": true,
+            "isBankUsing": false,
+            "isNationalCur": false,
+            "sortOrder": 30,
+            "isOpenAccount": false
+          }
+        }
+      ],
+      "extCode": "PRGNEW",
+      "isActive": true,
+      "prolongationAvailability": false,
+      "callRateAvailability": true,
+      "checkAccountSuspension": true,
+      "callRate": 0.010000000000,
+      "percentRates": "Устанавливаются в зависимости от срока размещения депозита для каждого процентного периода (исчисляется со дня, следующего за днем поступления суммы депозита в Банк), для депозитов со сроком 60, 90 и 120 дней процентный период устанавливается кратным 30 дням, а для депозитов со сроком 180, 270 и 360 дней — кратным 90 дням",
+      "paymentOfPercentsMethod": {
+        "id": 2,
+        "version": 0,
+        "name": "В конце срока (по ставке, установленной для последнего процентного периода)"
+      },
+      "isCapitalisation": false,
+      "isReplenishment": false,
+      "isPartialWithdrawal": false,
+      "isEarlyReturn": true,
+      "earlyReturnComment": "Возможен (по истечении первого процентного периода) с выплатой процентов за последний истекший процентный период по ставке, установленной для данного процентного периода, а за время с момента его окончания по дату возврата депозита — по ставке «до востребования», при условии получения Банком заявления о досрочном востребовании депозита не менее чем за 5 рабочих дней до предполагаемой даты возврата депозита"
+    },
+    {
+      "id": 6,
+      "version": 0,
+      "sysname": "Axioma_NSO",
+      "name": "НСО",
+      "description": "Выплата процентов в конце срока",
+      "externalSystemId": 14,
+      "addInfo": [],
+      "termConditions": [
+        {
+          "id": 13,
+          "version": 0,
+          "term": 1,
+          "kind": "MIN"
+        },
+        {
+          "id": 14,
+          "version": 0,
+          "term": 365,
+          "kind": "MAX"
+        }
+      ],
+      "amountConditions": [
+        {
+          "id": 13,
+          "version": 0,
+          "minAmount": 1000000.000000000000,
+          "currency": {
+            "id": 124,
+            "name": "russian ruble",
+            "okvName": "российский рубль",
+            "numericCode": "643",
+            "alphabeticCode": "RUB",
+            "accuracy": 100,
+            "isActive": true,
+            "isBankUsing": true,
+            "isNationalCur": true,
+            "sortOrder": 10,
+            "isOpenAccount": false
+          }
+        },
+        {
+          "id": 14,
+          "version": 0,
+          "minAmount": 15000.000000000000,
+          "currency": {
+            "id": 160,
+            "name": "US dollar",
+            "okvName": "доллар США",
+            "numericCode": "840",
+            "alphabeticCode": "USD",
+            "accuracy": 100,
+            "isActive": true,
+            "isBankUsing": true,
+            "isNationalCur": false,
+            "sortOrder": 20,
+            "isOpenAccount": false
+          }
+        },
+        {
+          "id": 15,
+          "version": 0,
+          "minAmount": 15000.000000000000,
+          "currency": {
+            "id": 197,
+            "name": "euro",
+            "okvName": "евро",
+            "numericCode": "978",
+            "alphabeticCode": "EUR",
+            "accuracy": 100,
+            "isActive": true,
+            "isBankUsing": false,
+            "isNationalCur": false,
+            "sortOrder": 30,
+            "isOpenAccount": false
+          }
+        }
+      ],
+      "extCode": "NSO",
+      "isActive": true,
+      "prolongationAvailability": false,
+      "callRateAvailability": false,
+      "checkAccountSuspension": false,
+      "percentRates": "Устанавливаются в зависимости от суммы и срока размещения неснижаемого остатка и в течение периода его поддержания на банковском счете не изменяются",
+      "paymentOfPercentsMethod": {
+        "id": 5,
+        "version": 0,
+        "name": "Производится единовременно в конце срока размещения неснижаемого остатка"
+      },
+      "isCapitalisation": false,
+      "isReplenishment": false,
+      "isPartialWithdrawal": false,
+      "isEarlyReturn": true,
+      "earlyReturnComment": "Для НСО возврат не применим, но допустимо расторжении сделки"
+    },
+    {
+      "id": 2,
+      "version": 1,
+      "sysname": "Axioma_IAM",
+      "name": "Депозит со сроком привлечения до года / свыше года",
+      "description": "Выплата процентов ежемесячно или в конце срока\n\nВозможен досрочный возврат",
+      "externalSystemId": 14,
+      "addInfo": [],
+      "termConditions": [
+        {
+          "id": 3,
+          "version": 0,
+          "term": 2,
+          "kind": "MIN"
+        },
+        {
+          "id": 4,
+          "version": 0,
+          "term": 1095,
+          "kind": "MAX"
+        }
+      ],
+      "amountConditions": [
+        {
+          "id": 4,
+          "version": 0,
+          "currency": {
+            "id": 124,
+            "name": "russian ruble",
+            "okvName": "российский рубль",
+            "numericCode": "643",
+            "alphabeticCode": "RUB",
+            "accuracy": 100,
+            "isActive": true,
+            "isBankUsing": true,
+            "isNationalCur": true,
+            "sortOrder": 10,
+            "isOpenAccount": false
+          }
+        },
+        {
+          "id": 5,
+          "version": 0,
+          "currency": {
+            "id": 160,
+            "name": "US dollar",
+            "okvName": "доллар США",
+            "numericCode": "840",
+            "alphabeticCode": "USD",
+            "accuracy": 100,
+            "isActive": true,
+            "isBankUsing": true,
+            "isNationalCur": false,
+            "sortOrder": 20,
+            "isOpenAccount": false
+          }
+        },
+        {
+          "id": 6,
+          "version": 0,
+          "currency": {
+            "id": 197,
+            "name": "euro",
+            "okvName": "евро",
+            "numericCode": "978",
+            "alphabeticCode": "EUR",
+            "accuracy": 100,
+            "isActive": true,
+            "isBankUsing": false,
+            "isNationalCur": false,
+            "sortOrder": 30,
+            "isOpenAccount": false
+          }
+        }
+      ],
+      "extCode": "IAM",
+      "isActive": true,
+      "prolongationAvailability": true,
+      "callRateAvailability": true,
+      "checkAccountSuspension": true,
+      "callRate": 0.010000000000,
+      "percentRates": "Устанавливаются в зависимости от суммы, валюты и срока размещения депозита",
+      "paymentOfPercentsMethod": {
+        "id": 4,
+        "version": 0,
+        "name": "Ежемесячно или в конце срока"
+      },
+      "isCapitalisation": true,
+      "isReplenishment": false,
+      "isPartialWithdrawal": false,
+      "isEarlyReturn": true,
+      "earlyReturnComment": "Возможен с выплатой процентов по ставке «до востребования» (предоставляется опционально), при условии получения Банком заявления о досрочном востребовании депозита не менее чем за 5 рабочих дней до даты возврата депозита"
+    }
+  ],
+  "total": 5
+}
