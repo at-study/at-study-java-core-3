@@ -2,14 +2,14 @@ package lections.lesson1;
 
 public class Rectangle {
 
-    int height;
-    int width;
+    public int height;
+    public int width;
 
     int getPerimeter() {
         return 2 * (height + width);
     }
 
-    int getSquare() {
+    public int getSquare() {
         return height * width;
     }
 

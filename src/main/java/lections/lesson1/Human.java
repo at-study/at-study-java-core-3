@@ -3,7 +3,7 @@ package lections.lesson1;
 public class Human {
 
     String gender;
-    int age;
+    public int age;
     int height;
     int weight;
     String name;
