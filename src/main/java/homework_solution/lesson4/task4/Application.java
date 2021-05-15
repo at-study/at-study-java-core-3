@@ -19,10 +19,10 @@ public class Application {
         Passport withoutNumberPassportCopy = new Passport().setSeries("1234");
         Passport withoutSeriesPassportCopy = new Passport().setNumber("123456");
 
-        // Корректное прикрепление паспорта к Human
+        // Корректное прикрепление паспорта к Cat
         Human human = new Human().setLastName("Иванов").setFirstName("Петр").setAge(15).setPassport(passport);
 
-        // Некорректные 3 прикрепления паспорта к Human
+        // Некорректные 3 прикрепления паспорта к Cat
         human.setPassport(withoutNumberPassport).setPassport(withoutSeriesPassport).setPassport(nullFieldsPassport);
     }
 

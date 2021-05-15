@@ -18,8 +18,8 @@ public class Application {
         int index = 0;
 
         /* Изменение на лекции
-        for (Human parent : elena.parents) {
-            for (Human grand : parent.parents)
+        for (Cat parent : elena.parents) {
+            for (Cat grand : parent.parents)
                 grands[index++] = grand;
         }
         */

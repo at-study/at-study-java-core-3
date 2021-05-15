@@ -21,8 +21,8 @@ public class Validator {
     public static boolean validateHuman(Human human) {
         boolean isHumanValid = human.getLastName() != null && human.getFirstName() != null && human.getBirthDate() != null;
         String output = isHumanValid
-                ? "Объект типа Human валиден"
-                : "Объект типа Human не валиден";
+                ? "Объект типа Cat валиден"
+                : "Объект типа Cat не валиден";
         System.out.println(output);
         return isHumanValid;
     }
