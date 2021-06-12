@@ -18,7 +18,7 @@ public class Cat {
         this(otherCat.name, otherCat.age, otherCat.weight);
     }
 
-    Cat(String name, int age, int weight) {
+    public Cat(String name, int age, int weight) {
         this.name = name;
         this.age = age;
         this.weight = weight;
@@ -31,6 +31,9 @@ public class Cat {
         this("Безымянный кот", age, weight);
     }
 
+    public String getName() {
+        return name;
+    }
 
     void voice() {
         System.out.println("Мяу");
@@ -64,4 +67,5 @@ public class Cat {
     protected void finalize() throws Throwable {
         // Есть вероятность, что будет вызван этот метод, когда сборщик мусора удалит этот объект
     }
+
 }
