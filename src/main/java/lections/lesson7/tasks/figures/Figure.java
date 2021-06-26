@@ -4,7 +4,7 @@ import java.util.Set;
 
 import lections.lesson7.tasks.chess.Field;
 
-public class Figure {
+public abstract class Figure {
 
     protected Field position;
     protected String name;
@@ -15,9 +15,7 @@ public class Figure {
         this.color = color;
     }
 
-    public Set<Field> getAvailableMoves() {
-        throw new IllegalStateException();
-    }
+    public abstract Set<Field> getAvailableMoves();
 
     public enum Color {
         BLACK,
