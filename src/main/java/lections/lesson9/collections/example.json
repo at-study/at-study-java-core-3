@@ -1,0 +1,12 @@
+{
+  "value1": null,
+  "value2": 5,
+  "value3": 5.5,
+  "value4": "str",
+  "value5": {},
+  "value6": {
+    "internalValue1": "abc",
+    "internalValue2": 15
+  },
+  "value7": false
+}
