@@ -1,9 +1,11 @@
 package lections.lesson8.browser;
 
+import lections.lesson10.properties.Property;
+
 public class BrowserFactory {
 
     public static Browser getBrowser() {
-        String browserName = System.getProperty("browser");
+        String browserName = Property.getStringProperty("browser");
         switch (browserName) {
             case "firefox":
                 return new Firefox();

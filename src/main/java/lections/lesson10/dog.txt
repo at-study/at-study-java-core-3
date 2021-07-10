@@ -1,0 +1,1 @@
+<Dog><Name>Шарик</Name><Age>10</Age></Dog>

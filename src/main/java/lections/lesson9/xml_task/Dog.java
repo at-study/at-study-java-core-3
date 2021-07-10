@@ -13,6 +13,13 @@ public class Dog implements Xml {
         this.age = age;
     }
 
+    public Dog(String xml) {
+        fromXml(xml);
+    }
+
+    public void incrementAge() {
+        age++;
+    }
 
     //  <Dog><Name>abcd</Name><Age>155</Age></Dog>
     @Override
@@ -80,5 +87,13 @@ public class Dog implements Xml {
         int result = name != null ? name.hashCode() : 0;
         result = 31 * result + age;
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
     }
 }
