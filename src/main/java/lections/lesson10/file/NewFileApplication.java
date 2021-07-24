@@ -9,17 +9,22 @@ import java.util.List;
 
 public class NewFileApplication {
 
-    public static void main(String... args) throws IOException {
-        Path path = Paths.get("src/main/java/lections/lesson10/sample.txt");
+    public static void main(String... args) {
+        Path path = Paths.get("src/main/java/lections/lesson10/sampl.txt");
         // byte[] content = Files.readAllBytes(path);
-        List<String> content = Files.readAllLines(path);
-        String stringContent = String.join("\r\n", content);
-        System.out.println(stringContent);
+        try {
+            List<String> content = Files.readAllLines(path);
+            String stringContent = String.join("\r\n", content);
+            System.out.println(stringContent);
 
-        String replaced = stringContent.replace("\r\n", " ");
-        Path outputPath = Paths.get("src/main/java/lections/lesson10/output.txt");
-        byte[] outputContent = replaced.getBytes();
-        Files.write(outputPath, outputContent, StandardOpenOption.APPEND);
+            String replaced = stringContent.replace("\r\n", " ");
+            Path outputPath = Paths.get("src/main/java/lections/lesson10/output.txt");
+            byte[] outputContent = replaced.getBytes();
+            Files.write(outputPath, outputContent, StandardOpenOption.APPEND);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 
 }

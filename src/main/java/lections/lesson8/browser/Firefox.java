@@ -1,6 +1,6 @@
 package lections.lesson8.browser;
 
-public class Firefox implements Browser, TakesScreenshot{
+public class Firefox implements Browser, TakesScreenshot {
 
     Firefox() {
 
