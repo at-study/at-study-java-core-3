@@ -19,7 +19,7 @@ public class PersonExcelTests {
     @Test
     @DisplayName("Тестирование чтения 3 человек из excel-файла")
     public void readThreePersonsTest() {
-        List<Human> persons = Excel.readFirstThreeHumanFromExcelFile("src/main/java/homework_task/lesson11/persons.xlsx");
+        List<Human> persons = Excel.readFirstThreeHumansFromExcelFile("src/main/java/homework_task/lesson11/persons.xlsx");
 
         Assertions.assertNotNull(persons);
         Assertions.assertEquals(3, persons.size());

@@ -20,10 +20,17 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class Excel {
 
-    public static List<Human> readFirstThreeHumanFromExcelFile(String path) {
+    public static List<Human> readFirstThreeHumansFromExcelFile(String path) {
         Workbook workbook = openExcelFile(path);
         Sheet sheet = workbook.getSheet("Persons1");
         List<Row> rows = getThreeRowsFromSheet(sheet);
+        return convertRowsToHumans(rows);
+    }
+
+    public static List<Human> readHumansFromExcelFile(String path) {
+        Workbook workbook = openExcelFile(path);
+        Sheet sheet = workbook.getSheet("Persons1");
+        List<Row> rows = getAllRowsFromSheet(sheet);
         return convertRowsToHumans(rows);
     }
 
@@ -40,6 +47,14 @@ public class Excel {
         List<Row> rows = new ArrayList<>();
         for (int i = 0; i < 3; i++) {
             Row row = sheet.getRow(i);
+            rows.add(row);
+        }
+        return rows;
+    }
+
+    private static List<Row> getAllRowsFromSheet(Sheet sheet) {
+        List<Row> rows = new ArrayList<>();
+        for (Row row : sheet) {
             rows.add(row);
         }
         return rows;

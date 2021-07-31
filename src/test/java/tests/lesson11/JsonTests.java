@@ -49,7 +49,7 @@ public class JsonTests {
 
     @Test
     public void listSerializationTest() {
-        List<Human> persons = Excel.readFirstThreeHumanFromExcelFile("src/main/java/homework_task/lesson11/persons.xlsx");
+        List<Human> persons = Excel.readFirstThreeHumansFromExcelFile("src/main/java/homework_task/lesson11/persons.xlsx");
         String json = new Gson().toJson(persons);
         System.out.println(json);
     }
