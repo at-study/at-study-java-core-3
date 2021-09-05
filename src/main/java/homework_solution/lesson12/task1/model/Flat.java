@@ -3,7 +3,7 @@ package homework_solution.lesson12.task1.model;
 import java.util.Arrays;
 import java.util.List;
 
-public class Flat implements Generatable {
+public class Flat implements Generatable<Flat> {
     private List<Room> rooms;
 
 

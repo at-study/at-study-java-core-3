@@ -1,6 +1,6 @@
 package homework_solution.lesson12.task1.model;
 
-public class Room implements Generatable {
+public class Room implements Generatable<Room> {
     private int width;
     private int height;
 
